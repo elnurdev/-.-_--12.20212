@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Автоскоп.рф_от 12.20212</title>
-    <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700,800" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
@@ -29,17 +29,17 @@
                                     <span></span>
                                 </label>
                                 <li><a class="menu__item" href="#">О сервисе <span>></span></a></li>
-                                <li><a class="menu__item" href="#">Тарифы <span>></span></a></li>
+                                <li><a class="menu__item" href="tarifs/index.html">Тарифы <span>></span></a></li>
                                 <li><a class="menu__item" href="#">FAQ <img src="./img/help__icon.svg" alt=""></a></li>
-                                <a href="#" class="header-btn-media btn-primary">Где я могу <span>найти VIN? ></span></a>
+                                <a href="#popup" class="header-btn-media btn-primary">Где я могу <span>найти VIN? ></span></a>
                             </ul>
                           </div>
                         <li class="header-navigation__item"><a href="#" class="header-navigation__link">О сервисе <span>></span></a></li>
-                        <li class="header-navigation__item"><a href="#" class="header-navigation__link">Тарифы <span>></span></a></li>
+                        <li class="header-navigation__item"><a href="tarifs/index.html" class="header-navigation__link">Тарифы <span>></span></a></li>
                         <li class="header-navigation__item" id="last-blog"><a href="#" class="header-navigation__link">FAQ <img src="./img/help__icon.svg" alt=""></a></li>
                     </ul>
                 </div>
-                <a href="#" class="header-btn btn-primary">Где я могу <span>найти VIN? ></span></a>
+                <a href="#popup" class="header-btn btn-primary" id="open">Где я могу <span>найти VIN? ></span></a>
             </div>
         </div>
     </header>
@@ -266,7 +266,7 @@
                 <div class="footer-second__blog">
                     <ul class="footer-navigation__items">
                         <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">О сервисе</a></li>
-                        <li class="footer-navigation__item" id="last-blog"><a href="#" class="footer-navigation__link">Тарифы</a></li>
+                        <li class="footer-navigation__item" id="last-blog"><a href="tarifs/index.html" class="footer-navigation__link">Тарифы</a></li>
                         <li class="footer-navigation__item"><a href="#" class="footer-navigation__link">Контакты</a></li>
                         <li class="footer-navigation__item" id="last-blog"><a href="#" class="footer-navigation__link"><img src="./img/question.svg" alt=""> FAQ</a></li>
                     </ul>
@@ -292,5 +292,30 @@
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__main">
+                        <h3 class="popup__title">Где Вы можете найти VIN-номер</h3>
+                        <a href="#desktop" class="close">X</a>
+                    </div>
+                    <div class="main-popup">
+                        <div class="popup__image">
+                            <img src="./tarifs/./img/popup_image.svg" alt="" class="popup__img">
+                        </div>
+                        <div class="popup__info">
+                            <h4 class="popup__info-item"><img src="./tarifs/img/statuses_green.svg" alt="" class="popup__check-mark">На стойке у передней двери</h4>
+                            <h4 class="popup__info-item"><img src="./tarifs/img/statuses_green.svg" alt="" class="popup__check-mark">На панели под лобовым стеклом</h4>
+                            <h4 class="popup__info-item"><img src="./tarifs/img/statuses_green.svg" alt="" class="popup__check-mark">Под капотом</h4>
+                            <h3 class="popup__info-title">Так же, его можно найти в <br> документах на ТС</h3>
+                            <h4 class="popup__info-item"><img src="./tarifs/img/statuses_blue.svg" alt="" class="popup__check-mark">В паспорте ТС</h4>
+                            <h4 class="popup__info-item"><img src="./tarifs/img/statuses_blue.svg" alt="" class="popup__check-mark">В свидетельстве о регистрации</h4>
+                            <h4 class="popup__info-item"><img src="./tarifs/img/statuses_blue.svg" alt="" class="popup__check-mark">В полисе ОСАГО</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="desktop"></div>
 </body>
 </html>

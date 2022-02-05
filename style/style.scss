@@ -22,13 +22,13 @@ $unselect: #9FB7D3;
             .header-navigation__items {
                 display: flex;
                 align-items: center;
-                margin: 0 0 0 138px;
+                margin: 0 0 6px 138px;
                 .hamburger-menu {
                     display: none;
                 }
                 .header-navigation__item {
                     list-style: none;
-                    margin: 0 65px 6px 0;
+                    margin: 0 65px 0px 0;
                     .header-navigation__link {
                         span {
                             color: #2285E0;
